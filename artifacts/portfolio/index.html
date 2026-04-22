@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Krisna Adi Pratama — Creative Developer</title>
+    <meta name="description" content="Portfolio of Krisna Adi Pratama, creative developer crafting interactive web experiences." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Bricolage+Grotesque:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Dummy-Project-main/artifacts/portfolio/src/style.css" />
+  </head>
+  <body>
+    <!-- Custom cursor -->
+    <div class="cursor cursor--dot" id="cursorDot"></div>
+    <div class="cursor cursor--ring" id="cursorRing"></div>
+
+    <!-- Nav -->
+    <header class="nav">
+      <a href="#hero" class="nav__logo">K.A.P<span>✦</span></a>
+      <nav class="nav__links">
+        <a href="#about" data-cursor="link">About</a>
+        <a href="#skills" data-cursor="link">Skills</a>
+        <a href="#projects" data-cursor="link">Projects</a>
+        <a href="#contact" data-cursor="link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" data-cursor="button" aria-label="Toggle theme">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero__grid"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal" data-reveal>Creative Developer · Based in Indonesia</p>
+        <h1 class="hero__title">
+          <span class="reveal-line" data-reveal><span>Hi, I'm</span></span>
+          <span class="reveal-line" data-reveal><span><em>Pratama.</em></span></span>
+          <span class="reveal-line" data-reveal><span>I build wonderful</span></span>
+          <span class="reveal-line" data-reveal><span>websites.</span></span>
+        </h1>
+        <p class="hero__tagline reveal" data-reveal>
+          A 21-year-old frontend engineer & designer from Indonesia, turning caffeine into
+          pixel-perfect, motion-rich interfaces that don't put people to sleep.
+        </p>
+        <div class="hero__actions reveal" data-reveal>
+          <a href="#projects" class="btn btn--primary" data-cursor="button">
+            <span>See my work</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost" data-cursor="button">Get in touch</a>
+        </div>
+        <div class="hero__scroll reveal" data-reveal>
+          <span></span> scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Design ✦</span><span>Code ✦</span><span>Motion ✦</span>
+        <span>Type ✦</span><span>Color ✦</span><span>Detail ✦</span>
+        <span>Design ✦</span><span>Code ✦</span><span>Motion ✦</span>
+        <span>Type ✦</span><span>Color ✦</span><span>Detail ✦</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="section-head reveal" data-reveal>
+        <span class="section-head__num">01</span>
+        <span class="section-head__label">About</span>
+      </div>
+      <div class="about__grid">
+        <div class="about__copy">
+          <h2 class="reveal" data-reveal>
+            A developer who treats the browser like a canvas, not a constraint.
+          </h2>
+          <p class="reveal" data-reveal>
+            I'm Krisna Adi Pratama — a 21-year-old creative developer based in Indonesia.
+            I build digital products for studios, startups, and independent artists.
+            My favorite problems live at the intersection of engineering and craft:
+            smooth animations, satisfying interactions, and interfaces that feel like
+            they were made by a human, not a template.
+          </p>
+          <p class="reveal" data-reveal>
+            When I'm not at my keyboard you'll probably find me sipping kopi tubruk,
+            riding my motorbike along the coast, or losing at chess against my dad.
+          </p>
+        </div>
+        <aside class="about__side">
+          <div class="stat reveal" data-reveal>
+            <div class="stat__num" data-count="4">0</div>
+            <div class="stat__label">Years building<br/>for the web</div>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <div class="stat__num" data-count="28">0</div>
+            <div class="stat__label">Shipped projects<br/>across 7 countries</div>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <div class="stat__num" data-count="100" data-suffix="%">0</div>
+            <div class="stat__label">Caffeine to code<br/>conversion rate</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="section-head reveal" data-reveal>
+        <span class="section-head__num">02</span>
+        <span class="section-head__label">Skills</span>
+      </div>
+      <h2 class="skills__title reveal" data-reveal>Tools of the trade.</h2>
+      <div class="skills__grid"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="section-head reveal" data-reveal>
+        <span class="section-head__num">03</span>
+        <span class="section-head__label">Projects</span>
+      </div>
+      <h2 class="projects__title reveal" data-reveal>Selected work.</h2>
+      <div class="projects__grid"></div>
+    </section>
+
+    <!-- Marquee 2 -->
+    <div class="marquee marquee--reverse" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Let's build →</span><span>Something →</span><span>Memorable →</span>
+        <span>Together →</span><span>Let's build →</span><span>Something →</span>
+        <span>Memorable →</span><span>Together →</span>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="section-head reveal" data-reveal>
+        <span class="section-head__num">04</span>
+        <span class="section-head__label">Contact</span>
+      </div>
+      <h2 class="contact__title">
+        <span class="reveal-line" data-reveal><span>Got a project?</span></span>
+        <span class="reveal-line" data-reveal><span>Let's <em>talk.</em></span></span>
+      </h2>
+      <a href="mailto:hi@pratama.dev" class="contact__email reveal" data-cursor="button" data-reveal>
+        hi@pratama.dev
+      </a>
+      <ul class="socials"></ul>
+      <footer class="footer">
+        <span>© 2026 Krisna Adi Pratama</span>
+        <span>Made with too much kopi in Indonesia</span>
+      </footer>
+    </section>
+
+    <script type="module" src="/Dummy-Project-main/artifacts/portfolio/src/main.js"></script>
+  </body>
+</html>
